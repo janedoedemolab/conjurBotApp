@@ -1,0 +1,14 @@
+Loaded policy 'root'
+{
+  "created_roles": {
+    "cyberark:user:Jane@BotApp": {
+      "id": "cyberark:user:Jane@BotApp",
+      "api_key": "26mj9n427ry0yc2n5jss5xbv7vj3m6sa2pxa5vm5tyv5qj33m7kgz"
+    },
+    "cyberark:host:BotApp/myDemoApp": {
+      "id": "cyberark:host:BotApp/myDemoApp",
+      "api_key": "1y1w3hch8wkcs27mge0z2vvnkyt38n4pq3shd7y2qm9hea8hmz6d"
+    }
+  },
+  "version": 52
+}

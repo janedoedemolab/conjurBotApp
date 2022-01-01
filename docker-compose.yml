@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  bot_app:
+    image: janedoedemolab/conjur-quickstart
+    privileged: true
+    container_name: bot_app
+    command: tail -F anything
+    volumes:
+    - ./getConjurToken:/tmp/getConjurToken
+    - ./program.sh:/tmp/program.sh
+    restart: on-failure
+    extra_hosts:
+    - "rhel81.alpha.local:10.58.39.111"
+    - "rhel82.alpha.local:10.58.39.112"
+
