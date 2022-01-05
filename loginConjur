@@ -1,5 +1,0 @@
-#!/bin/bash
-
-docker-compose exec client conjur init -u https://master-dap.cyberarkdemo.com -a cyberark
-docker-compose exec client conjur authn login admin
-
