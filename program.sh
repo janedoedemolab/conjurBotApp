@@ -3,7 +3,7 @@ GREEN="\033[32m"
 NC='\033[0m' # No Color
 #/tmp/getConjurToken
 
-ConjurURL=""
+ConjurURL="https://"
 ConjurAccount=""
 ConjurAPI=""
 ConjurHostID="host%2FnewApps%2Fjenkins-a"
