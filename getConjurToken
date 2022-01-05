@@ -1,3 +1,0 @@
-#!/bin/bash
-
-curl -d 32q5ehz3qjbhbs1qkj7v83rhkksk322d7ar2bwammm18rwcmx2ctjxm3 -k https://rhel81.alpha.local/authn/myorg/host%2FnewApps%2Fjenkins-a/authenticate > /tmp/conjur_token
