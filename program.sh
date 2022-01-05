@@ -7,7 +7,7 @@ main() {
 do
   CONT_SESSION_TOKEN=$(cat /tmp/conjur_token| base64 | tr -d '\r\n')
   VAR_VALUE=$(curl -s -k -H "Content-Type: application/json" -H "Authorization: Token token=\"$CONT_SESSION_TOKEN\"" https://rhel81.alpha.local/secrets/myorg/variable/newApps%2FdbPassword-a)
-  printf "Shhh! Please keep this secret ${GREEN}$VAR_VALUE${NC} to yourself\n"
+  printf "Shhh...Please keep this secret ${GREEN}$VAR_VALUE${NC} to yourself\n"
   sleep 1
 done
 }
