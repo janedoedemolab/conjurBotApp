@@ -7,7 +7,7 @@ ConjurURL=https://rhel81.alpha.local
 ConjurAccount=myorg
 ConjurAPI=32q5ehz3qjbhbs1qkj7v83rhkksk322d7ar2bwammm18rwcmx2ctjxm3
 ConjurHostID=host%2FnewApps%2Fjenkins-a
-ConjurAccessToken=$(curl -s -d $ConjurAPI -k $ConjurURL/authn/myorg/$ConjurHostID/authenticate)
+ConjurAccessToken=$(curl -s -d $ConjurAPI -k $ConjurURL/authn/$ConjurAccount/$ConjurHostID/authenticate)
 ConjurSecretVariable=newApps%2FdbPassword-a
 
 echo "$ConjurAccessToken" > /tmp/conjur_token
