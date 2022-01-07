@@ -3,12 +3,14 @@ GREEN="\033[32m"
 NC='\033[0m' # No Color
 #/tmp/getConjurToken
 
+# --- Fill this up ---
 ConjurURL="https://"
 ConjurAccount=""
 ConjurAPI=""
 ConjurHostID="host%2FnewApps%2Fjenkins-a"
 ConjurAccessToken=$(curl -s -d $ConjurAPI -k $ConjurURL/authn/$ConjurAccount/$ConjurHostID/authenticate)
 ConjurSecretVariable="newApps%2FdbPassword-a"
+# --- End ---
 
 echo "$ConjurAccessToken" > /tmp/conjur_token
 
