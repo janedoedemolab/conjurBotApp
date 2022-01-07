@@ -13,7 +13,7 @@ ConjurSecretVariable="newApps%2FdbPassword-a"
 echo "$ConjurAccessToken" > /tmp/conjur_token
 
 main() {
-  for i in {1..200}
+  while true
 do
   CONT_SESSION_TOKEN=$(cat /tmp/conjur_token| base64 | tr -d '\r\n')
   VAR_VALUE=$(curl -s -k -H "Content-Type: application/json" -H "Authorization: Token token=\"$CONT_SESSION_TOKEN\"" $ConjurURL/secrets/$ConjurAccount/variable/$ConjurSecretVariable)
